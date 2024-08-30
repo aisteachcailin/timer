@@ -11,7 +11,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background: linear-gradient(223deg, #ffaccb, #fff2f700);
+  background: linear-gradient(45deg, #ffaccb, #fff2f700);
   font-family: monospace;
   font-weight: 400;
 }
@@ -40,7 +40,7 @@ body {
   align-items: center;
   font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 } 
 
 .timer-input input {
@@ -78,46 +78,6 @@ input[type="number"]:focus {
   gap: 1rem;
 }
 
-.btn {
-  background-color: #ff9bbc;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 0.8rem 1.6rem;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.btn:hover {
-  background-color: #ff7da8;
-}
-
-.btn-start {
-  background-color: #ff7da8;
-}
-
-.btn-start:hover {
-  background-color: #ff7da8;
-}
-
-.btn-pause {
-  background-color: #ff7da8;
-}
-
-.btn-pause:hover {
-  background-color: #ff7da8;
-}
-
-.btn-reset {
-  background-color: #ff7da8;
-}
-
-.btn-reset:hover {
-  background-color: #ff7da8;
-}
-
 .ideas-container {
   display: flex;
   flex-direction: column;
@@ -134,7 +94,8 @@ input[type="number"]:focus {
   color: #ff7da8;
   border-radius: 8px;
   outline: none;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
 }
 
 .ideas-container .ideas-input {
@@ -152,8 +113,13 @@ input.ideas-input::placeholder {
   width: 36px;
 }
 
+.ideas-container .icon-delete {
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+
 .ideas-container ol {
-  /* list-style-type: none; */
   padding: 0;
   width: 100%;
   max-width: 400px;
@@ -165,29 +131,8 @@ input.ideas-input::placeholder {
   justify-content: space-between;
   align-items: center;
   padding: 5px 5px 5px 10px;
-  /* border-radius: 8px; */
   border-bottom: 1px solid #ff9bbc;
   margin-bottom: 0.5rem;
   color: #ff9bbc;
-}
-
-/* .ideas-container li:hover {
-  background-color: #feeff378;
-  transition: 0.3s;
-} */
-
-.ideas-container .btn-delete {
-  background-color: #ff9bbc;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 0.4rem 0.8rem;
-  font-size: 0.8rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.ideas-container .btn-delete:hover {
-  background-color: #ff7da8;
+  word-break: break-word;
 }
